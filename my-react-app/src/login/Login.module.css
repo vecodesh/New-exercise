@@ -1,0 +1,124 @@
+@keyframes popUp {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%) scale(0.9); /* Start lower and smaller */
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.05); /* Slightly overshoot the final size */
+    }
+    70% {
+        transform: translate(-50%, -50%) scale(0.95); /* Slight bounce back */
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1); /* End at the correct position and size */
+    }
+}
+.manner {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.manner video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 1; /* Full clarity for the video */
+}
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 40px 80px 40px;
+    border: solid 0.5px black;
+    border-radius: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.599);
+    background-color: rgba(0, 0, 0, 0.33);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: popUp 7s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Enhanced pop-up animation */
+}
+
+
+.heading {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.inputGroup p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputField {
+    flex: 1;
+    padding: 10px;
+    margin: 10px 0 20px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.loginButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #00000063;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.loginButton:hover {
+    background-color: #ffffff98;
+    color: #000000;
+}
+
+.signupButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #00000098;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signupButton:hover {
+    background-color: #ffffff8e;
+    color: rgb(0, 0, 0);
+}
+
+.signupLink {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.errorMessage {
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+}

@@ -1,0 +1,65 @@
+/* About Us Container */
+.about-us {
+    padding: 100px 50px; /* Increased padding for more spacious layout */
+    background-color: #f9f9f9; /* Softer, neutral background for a clean look */
+    color: #333333; /* Darker text for better readability */
+    text-align: center;
+    border-radius: 10px; /* Slightly larger rounded corners for a modern touch */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Deeper shadow for more depth */
+    max-width: 1200px; /* Constrains width for better focus */
+    margin: 0 auto; /* Centers the container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.about-us:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Heading Style */
+.h1o {
+    font-size: 2.5rem; /* Larger font size for impact */
+    color: #333333; /* Clean dark color for better readability */
+    text-align: center;
+    margin-bottom: 40px; /* Increased spacing for better separation */
+    font-weight: 700; /* Bolder, but clean look */
+    text-transform: uppercase;
+    letter-spacing: 0.1em; /* Increased letter spacing for elegance */
+    font-family: 'Montserrat', sans-serif; /* Modern font for headings */
+}
+
+/* Paragraph Style */
+.para {
+    font-size: 1.1rem; /* Comfortable font size for body text */
+    font-style: normal;
+    color: #666666; /* Softer gray for paragraphs */
+    font-family: 'Roboto', sans-serif; /* Modern font for body text */
+    font-weight: 400; /* Regular weight for a clean appearance */
+    padding: 20px;
+    margin-bottom: 50px; /* Increased spacing for readability */
+    line-height: 1.8; /* Comfortable line height */
+    word-spacing: 0.2em; /* Enhanced word spacing for clarity */
+    letter-spacing: 0.05em;
+    text-align: justify; /* Justified text for neat paragraph blocks */
+}
+
+/* Enhanced Text Appearance */
+.para strong {
+    color: #f5ba13; /* Highlighting important text with a warm accent */
+    font-weight: 600; /* Slightly bolder for emphasis */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-us {
+        padding: 50px 20px;
+    }
+
+    .h1o {
+        font-size: 2rem; /* Smaller font size for smaller screens */
+    }
+
+    .para {
+        font-size: 1rem; /* Adjusted body text for mobile */
+    }
+}

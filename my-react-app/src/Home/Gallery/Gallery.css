@@ -1,0 +1,50 @@
+/* Gallery Container */
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers the images horizontally */
+    gap: 20px; /* Adds space between the images */
+    padding: 20px;
+    flex-wrap: wrap; /* Allows images to wrap onto the next line if needed */
+  }
+  
+  /* Individual Images */
+  .image-container img {
+    width: 300px; /* Sets a fixed width for the images */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 10px; /* Adds rounded corners to the images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Adds a smooth zoom effect on hover */
+  }
+  
+  /* Image Hover Effect */
+  .image-container img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+  }
+  
+  /* Heading Style */
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .custom-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto; /* This centers the button horizontally */
+    display: block; /* Ensures that the button is centered */
+  
+  }
+  
+  .custom-button:hover {
+    background-color: grey;
+    color: black;
+  }
+  
